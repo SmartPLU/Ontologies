@@ -1,0 +1,731 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:plu="http://data.cerema.fr/cnig/owl/plu/2.1#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:c="http://data.cerema.fr/cnig/owl/plu-enum/1.1#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1"/>
+  <owl:Class rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType">
+    <owl:oneOf rdf:parseType="Collection">
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/Autre">
+        <skos:topConceptOf>
+          <skos:ConceptScheme rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme">
+            <rdfs:label xml:lang="fr">Type d'une prescription d'urbanisme</rdfs:label>
+            <dct:isFormatOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType"/>
+          </skos:ConceptScheme>
+        </skos:topConceptOf>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) portant sur un autre domaine</skos:definition>
+        <rdfs:label xml:lang="fr">Autre</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/BatimentAgricoleSusceptibleChangerDestination">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un bâtiment agricole susceptible de changer de destination</skos:definition>
+        <rdfs:label xml:lang="fr">Bâtiment agricole susceptible de changer de destination</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/ConditionsDesserte">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) portant sur des conditions de desserte</skos:definition>
+        <rdfs:label xml:lang="fr">Conditions de desserte</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/ElementPaysagePatrimoinePointVueAProtegerMettreEnValeur">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un élément de paysage (bâti et espaces), de patrimoine, ou un point de vue, à protéger, à mettre en valeur</skos:definition>
+        <rdfs:label xml:lang="fr">Elément de paysage (bâti et espaces), de patrimoine, point de vue, à protéger, à mettre en valeur</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/ElementsContinuiteEcologiqueEtTrameVerteEtBleue">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) portant sur des éléments de continuité écologique et trame verte et bleue</skos:definition>
+        <rdfs:label xml:lang="fr">Eléments de continuité écologique et trame verte et bleue</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/EmplacementReserve">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un emplacement réservé</skos:definition>
+        <rdfs:label xml:lang="fr">Emplacement réservé</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/EmplacementReserveLogementOuMixiteSociale">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un emplacement réservé logement social/mixité sociale</skos:definition>
+        <rdfs:label xml:lang="fr">Emplacement réservé logement social/mixité sociale</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/EspaceBoiseClasse">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un Espace boisé classé</skos:definition>
+        <rdfs:label xml:lang="fr">Espace boisé classé</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/LimitationParticuliereImpantationConstructions">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescriptions concernant une limitation particulière d'implantation des constructions (bande constructible, marge de recul, zone non aedificandi, alignement, emprise des constructions...)</skos:definition>
+        <rdfs:label xml:lang="fr">limitation particulière d'implantation des constructions</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/PerimetreIssuPDUObligationStationnement">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un périmètre issu des PDU sur obligation de stationnement</skos:definition>
+        <rdfs:label xml:lang="fr">Périmètre issu des PDU sur obligation de stationnement</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/PreEmplacementReserveEquipements">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un pré-emplacement réservé pour des équipements</skos:definition>
+        <rdfs:label xml:lang="fr">Pré-emplacement réservé pour des équipements</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/ReglesImplantationConstructionsVoiesEmprisesPubliquesLimitesSeparatives">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant les règles d'implantation des constructions par rapport aux voies, emprises publiques et limites séparatives</skos:definition>
+        <rdfs:label xml:lang="fr">règles d'implantation des constructions par rapport aux voies, emprises publiques et limites séparatives</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurAmenagementNumerique">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) portant sur un secteur d’aménagement numérique</skos:definition>
+        <rdfs:label xml:lang="fr">Secteur d’aménagement numérique</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurComportantOrientationsAmenagementProgrammation">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un secteur comportant des orientations d'aménagement et de programmation</skos:definition>
+        <rdfs:label xml:lang="fr">Secteur comportant des orientations d'aménagement et de programmation</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurDensiteMaximaleReconstructionsAmenagementsBatimentsExistants">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un secteur à densité maximale pour les reconstructions ou aménagements de bâtiments existants</skos:definition>
+        <rdfs:label xml:lang="fr">secteur à densité maximale pour les reconstructions ou aménagements de bâtiments existants</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurDispositionReconstructionDemolition">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un secteur avec disposition de reconstruction/démolition</skos:definition>
+        <rdfs:label xml:lang="fr">Secteur avec disposition de reconstruction/démolition</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurDiversiteCommercialeAProteger">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un secteur de diversité commerciale à protéger</skos:definition>
+        <rdfs:label xml:lang="fr">Secteur de diversité commerciale à protéger</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurEnAttenteProjetAmenagementGlobal">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un secteur de projet en attente d'un projet d'aménagement global</skos:definition>
+        <rdfs:label xml:lang="fr">Secteur de projet en attente d'un projet d'aménagement global</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurLimitationConstructibiliteNuisancesOuRisques">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un secteur avec limitation de la constructibilité ou de l'occupation pour des raisons de nuisances ou de risques</skos:definition>
+        <rdfs:label xml:lang="fr">Secteur avec limitation de la constructibilité ou de l'occupation pour des raisons de nuisances ou de risques</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurPerformanceEnergetique">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) portant sur un secteur de performance énergétique</skos:definition>
+        <rdfs:label xml:lang="fr">Secteur de performance énergétique</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurPlanMasse">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un secteur de plan de masse</skos:definition>
+        <rdfs:label xml:lang="fr">Secteur de plan de masse</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurProgrammeLogementsMixiteSocialeZoneUetAU">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un secteur à programme de logements mixité sociale en zone U et AU</skos:definition>
+        <rdfs:label xml:lang="fr">Secteur à programme de logements mixité sociale en zone U et AU</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurProtegeRichesseSolEtSousSol">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un secteur protégé en raison de la richesse du sol et du sous-sol</skos:definition>
+        <rdfs:label xml:lang="fr">Secteur protégé en raison de la richesse du sol et du sous-sol</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurTailleMinimaleLogementsZoneUetAU">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un secteur avec taille minimale des logements en zone U et AU</skos:definition>
+        <rdfs:label xml:lang="fr">Secteur avec taille minimale des logements en zone U et AU</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurTransfertCOSZoneN">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un secteur à transfert de COS en zone N</skos:definition>
+        <rdfs:label xml:lang="fr">Secteur à transfert de COS en zone N</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/TerrainConcerneEquipementsZoneUetAU-Voies-OuvragesPublics-InstallationsInteretGeneral-EspacesVerts">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un terrain concerné par la localisation d'équipements en zone U et AU, voies, ouvrages publics, installations d'intérêt général, espaces verts</skos:definition>
+        <rdfs:label xml:lang="fr">Terrain concerné par la localisation d'équipements en zone U et AU, voies, ouvrages publics, installations d'intérêt général, espaces verts</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/TerrainCultiveAProtegerZoneUrbaine">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant un terrain cultivé à protéger en zone urbaine</skos:definition>
+        <rdfs:label xml:lang="fr">Terrain cultivé à protéger en zone urbaine</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/VoiesCheminsTransportPublicAConserverCreer">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) portant sur des voies, chemins, ou transport public à conserver et à créer</skos:definition>
+        <rdfs:label xml:lang="fr">Voies, chemins, transport public à conserver et à créer</rdfs:label>
+      </c:PrescriptionUrbaType>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/ZoneAmenagerPratiqueSki">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Prescription(s) concernant une zone à aménager en vue de la pratique du ski</skos:definition>
+        <rdfs:label xml:lang="fr">Zone à aménager en vue de la pratique du ski</rdfs:label>
+      </c:PrescriptionUrbaType>
+    </owl:oneOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="fr">Type d'une prescription d'urbanisme</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType">
+    <owl:oneOf rdf:parseType="Collection">
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ArretePrefetCoordonnateurMassif">
+        <skos:topConceptOf>
+          <skos:ConceptScheme rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme">
+            <rdfs:label xml:lang="fr">Type d'information associée à un document d'urbanisme</rdfs:label>
+            <dct:isFormatOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType"/>
+          </skos:ConceptScheme>
+        </skos:topConceptOf>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Arrêté du préfet coordonnateur de massif</skos:definition>
+        <rdfs:label xml:lang="fr">Arrêté du préfet coordonnateur de massif</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/Autre">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Zone d'urbanisme autre</skos:definition>
+        <rdfs:label xml:lang="fr">Zone d'urbanisme autre</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/DepassementReglesPLUDiversiteHabitat">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Dépassement des règles du PLU pour diversité de l’habitat</skos:definition>
+        <rdfs:label xml:lang="fr">Dépassement des règles du PLU pour diversité de l’habitat</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/DepassementReglesPLUPerformanceEnergetique">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Dépassement des règles du PLU pour performance énergétique</skos:definition>
+        <rdfs:label xml:lang="fr">Dépassement des règles du PLU pour performance énergétique</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/DocumentAmenagementCommercial">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Document d’aménagement commercial</skos:definition>
+        <rdfs:label xml:lang="fr">Document d’aménagement commercial</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/DroitPreemptionCommercial">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Droit de préemption commercial</skos:definition>
+        <rdfs:label xml:lang="fr">Droit de préemption commercial</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/EspacesMilieuxAPreserver">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">espaces et milieux à préserver, en fonction de l'intérêt écologique qu'ils présentent (zones humides, dunes, zones boisées côtières…)</skos:definition>
+        <rdfs:label xml:lang="fr">Espaces et milieux à préserver</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/Lotissement">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Lotissement</skos:definition>
+        <rdfs:label xml:lang="fr">Lotissement</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreDeveloppementPrioritaireEconomieEnergie">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">Périmètre de développement prioritaire économie d’énergie</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreDroitPreemptionUrbain">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">Périmètre de droit de préemption urbain</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreForestier">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">Périmètre forestier : interdiction ou réglementation des plantations, plantations à réaliser </rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreMinierConcessionExploitationOuStockage">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">Périmètre minier de concession pour l’exploitation ou le stockage</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreNonApplicationL111-6-2">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Périmètre de non application du L 111 6 2</skos:definition>
+        <rdfs:label xml:lang="fr">Périmètre de non application du L 111 6 2</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreOperationInteretNational">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Périmètre d'opération d'intérêt national</skos:definition>
+        <rdfs:label xml:lang="fr">Périmètre d'opération d'intérêt national</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetrePUP">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Périmètre PUP</skos:definition>
+        <rdfs:label xml:lang="fr">Périmètre PUP</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreProtectionEspacesAgricolesEtNaturelsPeriUrbains">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Périmètre de protection des espaces agricoles et naturels péri-urbain</skos:definition>
+        <rdfs:label xml:lang="fr">Périmètre de protection des espaces agricoles et naturels péri-urbain</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreSecteurAffecteSeuilMinimalDensite">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Périmètre de secteur affecté par un seuil minimal de densité</skos:definition>
+        <rdfs:label xml:lang="fr">Périmètre de secteur affecté par un seuil minimal de densité</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreSursisAStatuer">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">Périmètre de sursis à statuer</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreVoisinageInfrastructureTransportTerrestre">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">Périmètre de voisinage d’infrastructure de transport terrestre</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreZonesDelimiteesDivisionsFoncieres">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">périmètre des zones délimitées - divisions foncières soumises à déclaration préalable</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PlanExpositionBruitAerodromes">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Plan d'exposition au bruit des aérodromes</skos:definition>
+        <rdfs:label xml:lang="fr">Plan d'exposition au bruit des aérodromes</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ProjetPPRN-PPRM">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">Projet de PPRN et PPRM</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ProtectionRivesPlansEauZoneMontagne">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Protection des rives des plans d'eau en zone de montagne</skos:definition>
+        <rdfs:label xml:lang="fr">Protection des rives des plans d'eau en zone de montagne</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/SecteurFiscaliteParticuliereTaxeAmenagement">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Secteur à fiscalité particulière en application du L331-14 (taxe d’aménagement)</skos:definition>
+        <rdfs:label xml:lang="fr">Secteur à fiscalité particulière (taxe d’aménagement)</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/SecteurProgrammeAmenagementEnsemble">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">Secteur de programme d'aménagement d'ensemble</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/SecteurSauvegarde">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">Secteur sauvegardé</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/SiteArcheologique">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">Site archéologique</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZPR-ZPE">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">ZPR-ZPE</skos:definition>
+        <rdfs:label xml:lang="fr">ZPR-ZPE</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZoneAgricoleProtegee">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">Zone agricole protégée</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZoneAmenagementConcerte">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">Zone d'aménagement concerté</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZoneAmenagementDiffere">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">Zone d’aménagement différé</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZoneEauAssainissementEliminationDechets">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">zone d'assainissement collectif/non collectif,  eaux usées/eaux pluviales, schéma de réseaux eau et assainissement, systèmes d’élimination des déchets</skos:definition>
+        <rdfs:label xml:lang="fr">Zone Eau, Assainissement, Elimination des Déchets</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZoneObligationPermisDemolir">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">Zone d'obligation du permis de démolir</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZonePreemptionEspaceNaturelEtSensible">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">Zone de préemption dans un espace naturel et sensible</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZoneRechercheExploitationCarriere">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">Zone de recherche et d’exploitation de carrière</rdfs:label>
+      </c:InformationUrbaType>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZoneRisqueExpositionPlomb">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType_ConceptScheme"/>
+        <rdfs:label xml:lang="fr">Zone à risque d’exposition au plomb</rdfs:label>
+      </c:InformationUrbaType>
+    </owl:oneOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="fr">Type d'information associée à un document d'urbanisme</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType">
+    <owl:oneOf rdf:parseType="Collection">
+      <c:EtatDocumentType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType/Abroge">
+        <skos:topConceptOf>
+          <skos:ConceptScheme rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType_ConceptScheme">
+            <rdfs:label xml:lang="fr">Etat d'un document d'urbanisme</rdfs:label>
+            <dct:isFormatOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType"/>
+          </skos:ConceptScheme>
+        </skos:topConceptOf>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Abrogé</skos:definition>
+        <rdfs:label xml:lang="fr">Abrogé</rdfs:label>
+      </c:EtatDocumentType>
+      <c:EtatDocumentType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType/Annule">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Annulé</skos:definition>
+        <rdfs:label xml:lang="fr">Annulé</rdfs:label>
+      </c:EtatDocumentType>
+      <c:EtatDocumentType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType/Approuve">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Approuvé</skos:definition>
+        <rdfs:label xml:lang="fr">Approuvé</rdfs:label>
+      </c:EtatDocumentType>
+      <c:EtatDocumentType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType/Arrete">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Arrêté</skos:definition>
+        <rdfs:label xml:lang="fr">Arrêté</rdfs:label>
+      </c:EtatDocumentType>
+      <c:EtatDocumentType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType/EnCours">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">En cours de procédure</skos:definition>
+        <rdfs:label xml:lang="fr">En cours de procédure</rdfs:label>
+      </c:EtatDocumentType>
+      <c:EtatDocumentType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType/Opposable">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Opposable</skos:definition>
+        <rdfs:label xml:lang="fr">Opposable</rdfs:label>
+      </c:EtatDocumentType>
+      <c:EtatDocumentType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType/Remplace">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Remplacé</skos:definition>
+        <rdfs:label xml:lang="fr">Remplacé</rdfs:label>
+      </c:EtatDocumentType>
+    </owl:oneOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="fr">Etat d'un document d'urbanisme</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType">
+    <owl:oneOf rdf:parseType="Collection">
+      <c:ZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType/A">
+        <skos:topConceptOf>
+          <skos:ConceptScheme rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType_ConceptScheme">
+            <rdfs:label xml:lang="fr">Type de Zone d'urbanisme</rdfs:label>
+            <dct:isFormatOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType"/>
+          </skos:ConceptScheme>
+        </skos:topConceptOf>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">A: Zone agricole</skos:definition>
+        <rdfs:label xml:lang="fr">Zone agricole</rdfs:label>
+      </c:ZoneUrbaType>
+      <c:ZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType/AUS">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">AUs: Zone à urbaniser bloqué</skos:definition>
+        <rdfs:label xml:lang="fr">Zone à urbaniser bloqué</rdfs:label>
+      </c:ZoneUrbaType>
+      <c:ZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType/AUc">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">AUc: Zone à urbaniser alternatif</skos:definition>
+        <rdfs:label xml:lang="fr">Zone à urbaniser alternatif</rdfs:label>
+      </c:ZoneUrbaType>
+      <c:ZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType/N">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">N: Zone naturel</skos:definition>
+        <rdfs:label xml:lang="fr">Zone naturel</rdfs:label>
+      </c:ZoneUrbaType>
+      <c:ZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType/Nd">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Nd: Zone naturel avec transfert de COS</skos:definition>
+        <rdfs:label xml:lang="fr">Zone naturel avec transfert de COS</rdfs:label>
+      </c:ZoneUrbaType>
+      <c:ZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType/Nh">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Nh: Zone naturel constructible</skos:definition>
+        <rdfs:label xml:lang="fr">Zone naturel constructible</rdfs:label>
+      </c:ZoneUrbaType>
+      <c:ZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType/U">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">U: Zone urbanisée</skos:definition>
+        <rdfs:label xml:lang="fr">Zone urbanisée</rdfs:label>
+      </c:ZoneUrbaType>
+    </owl:oneOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="fr">Type de Zone d'urbanisme</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType">
+    <owl:oneOf rdf:parseType="Collection">
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/Activite">
+        <skos:topConceptOf>
+          <skos:ConceptScheme rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme">
+            <rdfs:label xml:lang="fr">Vocation d'une zone d'urbanisme</rdfs:label>
+            <dct:isFormatOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType"/>
+          </skos:ConceptScheme>
+        </skos:topConceptOf>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Vocation activité</skos:definition>
+        <rdfs:label xml:lang="fr">Vocation activité</rdfs:label>
+      </c:VocationZoneUrbaType>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/ActivitesAgricoles">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Vocation activités agricoles</skos:definition>
+        <rdfs:label xml:lang="fr">Vocation activités agricoles</rdfs:label>
+      </c:VocationZoneUrbaType>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/Autre">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Vocation autre</skos:definition>
+        <rdfs:label xml:lang="fr">Vocation autre</rdfs:label>
+      </c:VocationZoneUrbaType>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/DestinationMixteHabitatActivite">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Vocation à destination mixte Habitat / Activité</skos:definition>
+        <rdfs:label xml:lang="fr">Vocation à destination mixte habitat / activité</rdfs:label>
+      </c:VocationZoneUrbaType>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/Equipement">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Vocation équipement</skos:definition>
+        <rdfs:label xml:lang="fr">Vocation équipement</rdfs:label>
+      </c:VocationZoneUrbaType>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/EspaceNaturel">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Vocation espace naturel</skos:definition>
+        <rdfs:label xml:lang="fr">Vocation espace naturel</rdfs:label>
+      </c:VocationZoneUrbaType>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/EspaceRemarquableLittoralMontagne">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Vocation espace remarquable (littoral / montagne)</skos:definition>
+        <rdfs:label xml:lang="fr">Vocation espace remarquable (littoral / montagne)</rdfs:label>
+      </c:VocationZoneUrbaType>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/Habitat">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Vocation habitat</skos:definition>
+        <rdfs:label xml:lang="fr">Vocation habitat</rdfs:label>
+      </c:VocationZoneUrbaType>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/LoisirsTourisme">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Vocation loisirs et tourisme</skos:definition>
+        <rdfs:label xml:lang="fr">Vocation loisirs et tourisme</rdfs:label>
+      </c:VocationZoneUrbaType>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/SansObjet">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Vocation sans objet ou non encore définie dans le règlement</skos:definition>
+        <rdfs:label xml:lang="fr">Vocation sans objet ou non encore définie dans le règlement</rdfs:label>
+      </c:VocationZoneUrbaType>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/SecteurCarriere">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Vocation secteur de carrière</skos:definition>
+        <rdfs:label xml:lang="fr">Vocation secteur de carrière</rdfs:label>
+      </c:VocationZoneUrbaType>
+    </owl:oneOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="fr">Vocation d'une zone d'urbanisme</rdfs:label>
+  </owl:Class>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <plu:DocumentUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#DocumentUrbaType/CarteCommunale">
+        <skos:topConceptOf>
+          <skos:ConceptScheme rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#DocumentUrbaType_ConceptScheme">
+            <rdfs:label xml:lang="fr">Type de document d'urbanisme</rdfs:label>
+            <dct:isFormatOf rdf:resource="http://data.cerema.fr/cnig/owl/plu/2.1#DocumentUrbaType"/>
+          </skos:ConceptScheme>
+        </skos:topConceptOf>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#DocumentUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Carte communale</skos:definition>
+        <rdfs:label xml:lang="fr">Carte communale</rdfs:label>
+      </plu:DocumentUrbaType>
+      <plu:DocumentUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#DocumentUrbaType/PlanLocalUrbanisme">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#DocumentUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#DocumentUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Plan local d'urbanisme</skos:definition>
+        <rdfs:label xml:lang="fr">Plan local d'urbanisme</rdfs:label>
+      </plu:DocumentUrbaType>
+      <plu:DocumentUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#DocumentUrbaType/PlanOccupationSols">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#DocumentUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#DocumentUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Plan d'occupation des sols</skos:definition>
+        <rdfs:label xml:lang="fr">Plan d'occupation des sols</rdfs:label>
+      </plu:DocumentUrbaType>
+      <plu:DocumentUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#DocumentUrbaType/PlanSauvegardeMiseValeur">
+        <skos:topConceptOf rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#DocumentUrbaType_ConceptScheme"/>
+        <skos:inScheme rdf:resource="http://data.cerema.fr/cnig/owl/plu-enum/1.1#DocumentUrbaType_ConceptScheme"/>
+        <skos:definition xml:lang="fr">Plan de sauvegarde et de mise en valeur</skos:definition>
+        <rdfs:label xml:lang="fr">Plan de sauvegarde et de mise en valeur</rdfs:label>
+      </plu:DocumentUrbaType>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ArretePrefetCoordonnateurMassif"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/Autre"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/DepassementReglesPLUDiversiteHabitat"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/DepassementReglesPLUPerformanceEnergetique"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/DocumentAmenagementCommercial"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/DroitPreemptionCommercial"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/EspacesMilieuxAPreserver"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/Lotissement"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreDeveloppementPrioritaireEconomieEnergie"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreDroitPreemptionUrbain"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreForestier"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreMinierConcessionExploitationOuStockage"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreNonApplicationL111-6-2"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreOperationInteretNational"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetrePUP"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreProtectionEspacesAgricolesEtNaturelsPeriUrbains"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreSecteurAffecteSeuilMinimalDensite"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreSursisAStatuer"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreVoisinageInfrastructureTransportTerrestre"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PerimetreZonesDelimiteesDivisionsFoncieres"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/PlanExpositionBruitAerodromes"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ProjetPPRN-PPRM"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ProtectionRivesPlansEauZoneMontagne"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/SecteurFiscaliteParticuliereTaxeAmenagement"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/SecteurProgrammeAmenagementEnsemble"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/SecteurSauvegarde"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/SiteArcheologique"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZPR-ZPE"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZoneAgricoleProtegee"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZoneAmenagementConcerte"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZoneAmenagementDiffere"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZoneEauAssainissementEliminationDechets"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZoneObligationPermisDemolir"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZonePreemptionEspaceNaturelEtSensible"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZoneRechercheExploitationCarriere"/>
+      <c:InformationUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#InformationUrbaType/ZoneRisqueExpositionPlomb"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/Activite"/>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/ActivitesAgricoles"/>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/Autre"/>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/DestinationMixteHabitatActivite"/>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/Equipement"/>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/EspaceNaturel"/>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/EspaceRemarquableLittoralMontagne"/>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/Habitat"/>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/LoisirsTourisme"/>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/SansObjet"/>
+      <c:VocationZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#VocationZoneUrbaType/SecteurCarriere"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <c:ZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType/A"/>
+      <c:ZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType/AUS"/>
+      <c:ZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType/AUc"/>
+      <c:ZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType/N"/>
+      <c:ZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType/Nd"/>
+      <c:ZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType/Nh"/>
+      <c:ZoneUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#ZoneUrbaType/U"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <c:EtatDocumentType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType/Abroge"/>
+      <c:EtatDocumentType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType/Annule"/>
+      <c:EtatDocumentType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType/Approuve"/>
+      <c:EtatDocumentType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType/Arrete"/>
+      <c:EtatDocumentType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType/EnCours"/>
+      <c:EtatDocumentType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType/Opposable"/>
+      <c:EtatDocumentType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#EtatDocumentType/Remplace"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/Autre"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/BatimentAgricoleSusceptibleChangerDestination"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/ConditionsDesserte"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/ElementPaysagePatrimoinePointVueAProtegerMettreEnValeur"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/ElementsContinuiteEcologiqueEtTrameVerteEtBleue"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/EmplacementReserve"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/EmplacementReserveLogementOuMixiteSociale"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/EspaceBoiseClasse"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/LimitationParticuliereImpantationConstructions"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/PerimetreIssuPDUObligationStationnement"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/PreEmplacementReserveEquipements"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/ReglesImplantationConstructionsVoiesEmprisesPubliquesLimitesSeparatives"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurAmenagementNumerique"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurComportantOrientationsAmenagementProgrammation"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurDensiteMaximaleReconstructionsAmenagementsBatimentsExistants"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurDispositionReconstructionDemolition"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurDiversiteCommercialeAProteger"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurEnAttenteProjetAmenagementGlobal"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurLimitationConstructibiliteNuisancesOuRisques"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurPerformanceEnergetique"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurPlanMasse"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurProgrammeLogementsMixiteSocialeZoneUetAU"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurProtegeRichesseSolEtSousSol"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurTailleMinimaleLogementsZoneUetAU"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/SecteurTransfertCOSZoneN"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/TerrainConcerneEquipementsZoneUetAU-Voies-OuvragesPublics-InstallationsInteretGeneral-EspacesVerts"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/TerrainCultiveAProtegerZoneUrbaine"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/VoiesCheminsTransportPublicAConserverCreer"/>
+      <c:PrescriptionUrbaType rdf:about="http://data.cerema.fr/cnig/owl/plu-enum/1.1#PrescriptionUrbaType/ZoneAmenagerPratiqueSki"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+</rdf:RDF>
