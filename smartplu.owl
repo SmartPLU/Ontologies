@@ -1,0 +1,1501 @@
+@prefix : <http://www.smartplu.org/owl/2018/smartplu#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix obda: <https://w3id.org/obda/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.smartplu.org/owl/2018/smartplu> .
+
+<http://www.smartplu.org/owl/2018/smartplu> rdf:type owl:Ontology .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.smartplu.org/owl/2018/smartplu#AbriJardin
+:AbriJardin rdf:type owl:Class ;
+            rdfs:subClassOf :Dependance ;
+            rdfs:comment "principale. Elle doit être implantée selon un éloignement restreint entre les deux constructions"@fr ;
+            rdfs:label "Abri de Jardin"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#AccesVoirie
+:AccesVoirie rdf:type owl:Class ;
+             rdfs:subClassOf :Rubrique ;
+             rdfs:label "Accès et voirie"@fr ;
+             rdfs:seeAlso "Accès et Voirie"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#AccompagnementDecision
+:AccompagnementDecision rdf:type owl:Class ;
+                        rdfs:subClassOf :Decision ;
+                        rdfs:label "Accompagnement d'une décision"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Acrotere
+:Acrotere rdf:type owl:Class ;
+          rdfs:subClassOf :ElementConstruction ;
+          rdfs:comment "Élément de façade situé au-dessus de la toiture ou de la terrasse, à la périphérie du bâtiment, et constituant des rebords ou garde-corps, pleins ou à claire-voie."@fr ;
+          rdfs:label "Acrotère"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Acteur
+:Acteur rdf:type owl:Class ;
+        rdfs:subClassOf :OperationAmenagement ;
+        rdfs:label "Acteur d'une opération d'aménagement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Aerodrome
+:Aerodrome rdf:type owl:Class ;
+           rdfs:subClassOf :InfrastructureTransport ;
+           rdfs:label "Aérodrome"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#AffouillementSol
+:AffouillementSol rdf:type owl:Class ;
+                  rdfs:subClassOf :TravauxAmenagementSol ;
+                  rdfs:comment "Extraction de terre qui doit faire l’objet d’une autorisation si sa superficie est supérieure à 100 m2 et si sa profondeur excède 2 mètres."@fr ;
+                  rdfs:label "Affouillement de sol"@fr ;
+                  rdfs:seeAlso "Extraction de terre"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#AireStationnement
+:AireStationnement rdf:type owl:Class ;
+                   rdfs:subClassOf :Surface ;
+                   rdfs:label "Aire de stationnement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#AireStationnementParLogement
+:AireStationnementParLogement rdf:type owl:Class ;
+                              rdfs:subClassOf :Indicateur ;
+                              rdfs:label "Nombre d'aires de stationnement par logement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Alignement
+:Alignement rdf:type owl:Class ;
+            rdfs:subClassOf :Limite ;
+            rdfs:comment "L’alignement doit se comprendre, en l’absence de règlement et de précision contraire, comme la limite du domaine public au droit des parcelles privées."@fr ;
+            rdfs:label "Alignement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Angle
+:Angle rdf:type owl:Class ;
+       rdfs:subClassOf :Dimension ;
+       rdfs:label "Angle"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Annexe
+:Annexe rdf:type owl:Class ;
+        rdfs:subClassOf :Construction ;
+        rdfs:comment """Une annexe est une construction secondaire, de dimensions réduites et inférieures à la
+construction principale, qui apporte un complément aux fonctionnalités de la construction
+principale. Elle doit être implantée selon un éloignement restreint entre les deux constructions
+afin de marquer un lien d’usage. Elle peut être accolée ou non à la construction principale avec
+qui elle entretient un lien fonctionnel, sans disposer d’accès direct depuis la construction
+principale."""@fr ;
+        rdfs:label "Annexe"@fr ;
+        rdfs:seeAlso "Construction principale"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Attique
+:Attique rdf:type owl:Class ;
+         rdfs:subClassOf :LocalisationVerticale ;
+         rdfs:comment "Est considéré comme attique le ou les derniers niveaux placés au sommet d’une construction et situés en retrait dans le gabarit défini ci-après au même article. L’attique ne constitue pas un élément de façade. »"@fr ;
+         rdfs:label "Attique"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Autorisation
+:Autorisation rdf:type owl:Class ;
+              rdfs:subClassOf :Decision ;
+              rdfs:label "Autorisation"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#AutorisationSousCondition
+:AutorisationSousCondition rdf:type owl:Class ;
+                           rdfs:subClassOf :Decision ;
+                           rdfs:label "Autorisation sous condition"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Avancee
+:Avancee rdf:type owl:Class ;
+         rdfs:subClassOf :ElementArchitectural ;
+         rdfs:label "Avancée"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Azimuth
+:Azimuth rdf:type owl:Class ;
+         rdfs:subClassOf :Orientation ;
+         rdfs:label "Azimuth"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Batiment
+:Batiment rdf:type owl:Class ;
+          rdfs:subClassOf :Construction ;
+          rdfs:comment "Un bâtiment est une construction couverte et close."@fr ;
+          rdfs:label "Bâtiment"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#CageAscenseur
+:CageAscenseur rdf:type owl:Class ;
+               rdfs:subClassOf :InstallationTechnique ;
+               rdfs:label "Cage d’ascenseur"@fr ;
+               rdfs:seeAlso "Ascenseur"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#CageEscalier
+:CageEscalier rdf:type owl:Class ;
+              rdfs:subClassOf :ElementConstruction ;
+              rdfs:label "Cage d’escalier"@fr ;
+              rdfs:seeAlso "Escalier"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#CarteCommunale
+:CarteCommunale rdf:type owl:Class ;
+                rdfs:subClassOf :Reglement ;
+                rdfs:label "Carte communale"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ChangementDestination
+:ChangementDestination rdf:type owl:Class ;
+                       rdfs:subClassOf :OperationAmenagement ;
+                       rdfs:label "Changement de destination"@fr ;
+                       rdfs:seeAlso "Destination"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Cheminee
+:Cheminee rdf:type owl:Class ;
+          rdfs:subClassOf :ElementConstruction ;
+          rdfs:label "Cheminée"@fr ;
+          rdfs:seeAlso "Chauffage"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Clotures
+:Clotures rdf:type owl:Class ;
+          rdfs:subClassOf :Rubrique ;
+          rdfs:label "Clôtures"@fr ;
+          rdfs:seeAlso "Clôtures"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#CodeUrbanisme
+:CodeUrbanisme rdf:type owl:Class ;
+               rdfs:subClassOf :Reglement ;
+               rdfs:label "Code de l'Urbanisme"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#CoefficientEmpriseSol
+:CoefficientEmpriseSol rdf:type owl:Class ;
+                       rdfs:subClassOf :Indicateur ;
+                       rdfs:comment "Le coefficient d’emprise au sol (éventuellement fixé aux articles 9 des règlements de zone), qui détermine la densité d’emprise des constructions admise, est le rapport exprimant le nombre de mètres carrés d’emprise susceptibles d’être construits, par mètre carré de sol. Il se calcule en ef- fectuant le rapport entre l’emprise au sol de l’ensemble des constructions bâties ou à bâtir, hors volumes en sous-sol complètement enterré, et la superficie totale de l’unité foncière."@fr ;
+                       rdfs:label "Coefficient d’emprise au sol"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Comblement
+:Comblement rdf:type owl:Class ;
+            rdfs:subClassOf :TravauxAmenagementSol ;
+            rdfs:label "Comblement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Combles
+:Combles rdf:type owl:Class ;
+         rdfs:subClassOf :PartieConstruction ;
+         rdfs:label "Combles"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Condition
+:Condition rdf:type owl:Class ;
+           rdfs:subClassOf :AccompagnementDecision ;
+           rdfs:label "Condition"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ConditionsParticulieresOccupationUtilisationSol
+:ConditionsParticulieresOccupationUtilisationSol rdf:type owl:Class ;
+                                                 rdfs:subClassOf :Rubrique ;
+                                                 rdfs:label "Occupations et utilisations du sol soumis à conditions particulières"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Constructeur
+:Constructeur rdf:type owl:Class ;
+              rdfs:subClassOf :Acteur ;
+              rdfs:label "Constructeur"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Construction
+:Construction rdf:type owl:Class ;
+              rdfs:subClassOf :Ouvrage ;
+              rdfs:comment """Une construction est un ouvrage fixe et pérenne, comportant ou non des fondations et générant
+un espace utilisable par l’Homme en sous-sol ou en surface."""@fr ;
+              rdfs:label "Construction"@fr ;
+              rdfs:seeAlso "Les constructions visées par le règlement sont celles définies par l’article L.421-1 du Code de l’Urbanisme. En particulier, deux bâtiments, pour faire partie de la même construction, doivent être reliés par des éléments construits créant de l’emprise au sol au sens de l’article R420-1 du Code de l’Urbanisme.Il est rappelé que les constructions soumises à autorisation sont définies par le code de l’urbanisme."@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ConstructionExistante
+:ConstructionExistante rdf:type owl:Class ;
+                       rdfs:subClassOf :Construction ;
+                       rdfs:comment "Une construction est considérée comme existante si elle est reconnue comme légalement construite et si la majorité des fondations ou des éléments hors fondations déterminant la résistance et la rigidité de l'ouvrage remplissent leurs fonctions. Une ruine ne peut pas être considérée comme une construction existante."@fr ;
+                       rdfs:label "Construction existante"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ConstructionInteretCollectif
+:ConstructionInteretCollectif rdf:type owl:Class ;
+                              rdfs:subClassOf :Construction ;
+                              rdfs:label "Construction d’intérêt collectif"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ConstructionNecessaireServicesPublics
+:ConstructionNecessaireServicesPublics rdf:type owl:Class ;
+                                       rdfs:subClassOf :Construction ;
+                                       rdfs:label "Construction nécessaire aux services publics"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ConstructionPrincipale
+:ConstructionPrincipale rdf:type owl:Class ;
+                        rdfs:subClassOf :Construction ;
+                        rdfs:label "Construction principale"@fr ;
+                        rdfs:seeAlso "Corps principal de la construction"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ConstructionSecondaire
+:ConstructionSecondaire rdf:type owl:Class ;
+                        rdfs:subClassOf :Construction ;
+                        rdfs:label "Construction secondaire"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#CourbeIsopsophique
+:CourbeIsopsophique rdf:type owl:Class ;
+                    rdfs:subClassOf :Environnement ;
+                    rdfs:comment "L'évaluation de l'exposition au bruit (c'est-à-dire l'établissement des courbes isopsophiques et la détermination du nombre de personnes souffrant du bruit) est effectuée au moyen, au moins, des indicateurs de bruit communs Lden et Lnight"@fr ;
+                    rdfs:label "Courbe isopsophique"@fr ;
+                    rdfs:seeAlso "Bruit dans l'Environnement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#CoursEau
+:CoursEau rdf:type owl:Class ;
+          rdfs:subClassOf :EauZoneHumide ;
+          rdfs:label "Cours d’eau"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Couverture
+:Couverture rdf:type owl:Class ;
+            rdfs:subClassOf :Batiment ;
+            rdfs:label "Couverture"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Debord
+:Debord rdf:type owl:Class ;
+        rdfs:subClassOf :ElementConstruction ;
+        rdfs:comment "Pour les constructions existantes, un débord est autorisé pour la réalisation d’une isolation extérieure dans les marges de retrait."@fr ;
+        rdfs:label "Débord"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Decalage
+:Decalage rdf:type owl:Class ;
+          rdfs:subClassOf :Dimension ;
+          rdfs:label "Décalage"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Decision
+:Decision rdf:type owl:Class ;
+          rdfs:label "Décision"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Delimitation
+:Delimitation rdf:type owl:Class ;
+              rdfs:label "Délimitation d'un espace"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Densite
+:Densite rdf:type owl:Class ;
+         rdfs:subClassOf :Rubrique ;
+         rdfs:label "Densité"@fr ;
+         rdfs:seeAlso "Densité"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Dependance
+:Dependance rdf:type owl:Class ;
+            rdfs:subClassOf :Construction ;
+            rdfs:comment "construction principale, qui apporte un complément aux fonctionnalités de la construction"@fr ;
+            rdfs:label "Dépendance"@fr ;
+            rdfs:seeAlso "Construction principale"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#DestinationConstruction
+:DestinationConstruction rdf:type owl:Class ;
+                         rdfs:subClassOf :OperationAmenagement ;
+                         rdfs:comment "Destination d'une construction"@fr ;
+                         rdfs:label "Destination d'une construction"@fr ;
+                         rdfs:seeAlso "Destination"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#DeuxRoues
+:DeuxRoues rdf:type owl:Class ;
+           rdfs:subClassOf :Vehicule ;
+           rdfs:label "Deux roues"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Dimension
+:Dimension rdf:type owl:Class ;
+           rdfs:label "Dimension"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Distance
+:Distance rdf:type owl:Class ;
+          rdfs:subClassOf :Dimension ;
+          rdfs:label "Distance"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#EauZoneHumide
+:EauZoneHumide rdf:type owl:Class ;
+               rdfs:label "Plan d'eau, Cours d'eau ou Zone Humide"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#EgoutToiture
+:EgoutToiture rdf:type owl:Class ;
+              rdfs:subClassOf :ElementToiture ;
+              rdfs:comment "Correspond à la limite ou à la ligne basse d’un pan de couverture vers laquelle ruissellent des eaux de pluie pour aller ensuite dans une gouttière. Le pan de couverture ne doit pas excéder 50°."@fr ;
+              rdfs:label "Égout de toiture"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ElementAmenagement
+:ElementAmenagement rdf:type owl:Class ;
+                    rdfs:label "Élément d'aménagement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ElementArchitectural
+:ElementArchitectural rdf:type owl:Class ;
+                      rdfs:subClassOf :ElementConstruction ;
+                      rdfs:label "Élément architectural"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ElementConstruction
+:ElementConstruction rdf:type owl:Class ;
+                     rdfs:subClassOf :Construction ;
+                     rdfs:label "Élément de construction"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ElementFacade
+:ElementFacade rdf:type owl:Class ;
+               rdfs:subClassOf :ElementConstruction ;
+               rdfs:label "Élément de façade"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ElementLimiteSeparative
+:ElementLimiteSeparative rdf:type owl:Class ;
+                         rdfs:subClassOf :LimiteSeparative ;
+                         rdfs:label "Élément de limite séparative"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ElementToiture
+:ElementToiture rdf:type owl:Class ;
+                rdfs:subClassOf :ElementConstruction ;
+                rdfs:label "Élément de toiture"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ElementsProteges
+:ElementsProteges rdf:type owl:Class ;
+                  rdfs:subClassOf :Rubrique ;
+                  rdfs:label "Eléments protégés"@fr ;
+                  rdfs:seeAlso "Eléments protégés"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Elevation
+:Elevation rdf:type owl:Class ;
+           rdfs:subClassOf :Orientation ;
+           rdfs:label "Élévation"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Emplacement
+:Emplacement rdf:type owl:Class ;
+             rdfs:subClassOf :Delimitation ;
+             rdfs:label "Emplacement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#EmplacementReserveElargissementVoie
+:EmplacementReserveElargissementVoie rdf:type owl:Class ;
+                                     rdfs:subClassOf :Delimitation ;
+                                     rdfs:comment "S’il est prévu un emplacement réservé pour élargissement d’une voie, il convient d’en tenir compte pour les implantations de bâtiments."@fr ;
+                                     rdfs:label "Emplacement réservé pour l’élargissement d’une voie"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#EmprisePublique
+:EmprisePublique rdf:type owl:Class ;
+                 rdfs:subClassOf :Delimitation ;
+                 rdfs:comment "Les emprises publiques et les voies comprennent les espaces publics et privés affectés aux déplacements, à l’exclusion des espaces verts et des voies ferrées ou fluviales."@fr ;
+                 rdfs:label "Emprise publique"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#EmpriseSol
+:EmpriseSol rdf:type owl:Class ;
+            rdfs:subClassOf :Surface ;
+            rdfs:comment "L’emprise au sol est la projection verticale du volume de la construction*, tous débords et sur- plombs inclus (art.R420-1 du Code de l’Urbanisme)."@fr ;
+            rdfs:label "Emprise au sol"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Encorbellement
+:Encorbellement rdf:type owl:Class ;
+                rdfs:subClassOf :ElementArchitectural ;
+                rdfs:label "Encorbellement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Environnement
+:Environnement rdf:type owl:Class ;
+               rdfs:label "Environnement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#EspaceDeplacements
+:EspaceDeplacements rdf:type owl:Class ;
+                    rdfs:subClassOf :Delimitation ;
+                    rdfs:label "Espace affecté aux déplacements"@fr ;
+                    rdfs:seeAlso "Déplacements"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#EspacePrive
+:EspacePrive rdf:type owl:Class ;
+             rdfs:subClassOf :Delimitation ;
+             rdfs:label "Espace privé"@fr ;
+             rdfs:seeAlso "Domaine privé"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#EspacePublic
+:EspacePublic rdf:type owl:Class ;
+              rdfs:subClassOf :Delimitation ;
+              rdfs:label "Espace public"@fr ;
+              rdfs:seeAlso "Domaine public"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#EspaceVegetalise
+:EspaceVegetalise rdf:type owl:Class ;
+                  rdfs:subClassOf :Delimitation ;
+                  rdfs:label "Espace végétalisé"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#EspaceVert
+:EspaceVert rdf:type owl:Class ;
+            rdfs:subClassOf :Delimitation ;
+            rdfs:label "Espace vert"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#EspacesBoisesClasses
+:EspacesBoisesClasses rdf:type owl:Class ;
+                      rdfs:subClassOf :Rubrique ;
+                      rdfs:label "Espaces boisés classés"@fr ;
+                      rdfs:seeAlso "Espaces boisés classés"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Est
+:Est rdf:type owl:Class ;
+     rdfs:subClassOf :Orientation ;
+     rdfs:label "Est"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#EtablissementRecevantPublic
+:EtablissementRecevantPublic rdf:type owl:Class ;
+                             rdfs:label "Établissement recevant du public"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Etage
+:Etage rdf:type owl:Class ;
+       rdfs:subClassOf :LocalisationVerticale ;
+       rdfs:label "Étage"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#EtudeHydraulique
+:EtudeHydraulique rdf:type owl:Class ;
+                  rdfs:subClassOf :EtudeTechnique ;
+                  rdfs:label "Étude hydraulique"@fr ;
+                  rdfs:seeAlso "Hydraulique"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#EtudeTechnique
+:EtudeTechnique rdf:type owl:Class ;
+                rdfs:subClassOf :OperationAmenagement ;
+                rdfs:label "Étude technique"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Exhaussement
+:Exhaussement rdf:type owl:Class ;
+              rdfs:subClassOf :TravauxAmenagementSol ;
+              rdfs:label "Exhaussement de terrain"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ExtensionConstruction
+:ExtensionConstruction rdf:type owl:Class ;
+                       rdfs:subClassOf :Construction ;
+                       rdfs:comment "L’extension consiste en un agrandissement de la construction existante présentant des dimensions inférieures à celle-ci. L’extension peut être horizontale ou verticale (par surélévation, excavation ou agrandissement), et doit présenter un lien physique et fonctionnel avec la construction existante."@fr ;
+                       rdfs:label "Extension"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Facade
+:Facade rdf:type owl:Class ;
+        rdfs:subClassOf :ElementConstruction ;
+        rdfs:comment "Les façades d’un bâtiment ou d’une construction correspondent à l’ensemble de ses parois extérieures hors toiture. Elles intègrent tous les éléments structurels, tels que les baies, les bardages, les ouvertures, l’isolation extérieure et les éléments de modénature. Les façades d’un bâtiment sont constituées par ses faces verticales, situées au-dessus du niveau du sol."@fr ;
+        rdfs:label "Façade"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#FacadeArriere
+:FacadeArriere rdf:type owl:Class ;
+               rdfs:subClassOf :Facade ;
+               rdfs:comment "La façade opposée à celle qui est orientée vers la voie principale desservant la propriété."@fr ;
+               rdfs:label "Façade arrière"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#FacadeAvant
+:FacadeAvant rdf:type owl:Class ;
+             rdfs:subClassOf :Facade ;
+             rdfs:label "Façade avant"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Faitage
+:Faitage rdf:type owl:Class ;
+         rdfs:subClassOf :ElementToiture ;
+         rdfs:label "Faîtage"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#FilDEau
+:FilDEau rdf:type owl:Class ;
+         rdfs:subClassOf :Reference ;
+         rdfs:comment "Toutefois, dans le cas de plans d’aménagements approuvés (lotissements....), d’autres points singuliers de nivellement pourront servir de référence tels que fil d’eau de la voie desservant l’i meuble par exemple."@fr ;
+         rdfs:label "Fil d'eau"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Foncier
+:Foncier rdf:type owl:Class ;
+         rdfs:label "Foncier"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#FondPropriete
+:FondPropriete rdf:type owl:Class ;
+               rdfs:subClassOf :ElementLimiteSeparative ;
+               rdfs:comment "Le fond de propriété désigne parmi les limites séparatives celle qui n’aboutit pas à la voie."@fr ;
+               rdfs:label "Fond de propriété"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Fondation
+:Fondation rdf:type owl:Class ;
+           rdfs:subClassOf :ElementConstruction ;
+           rdfs:label "Fondation"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Gabarit
+:Gabarit rdf:type owl:Class ;
+         rdfs:subClassOf :Dimension ;
+         rdfs:comment "Le gabarit désigne l’ensemble des plans verticaux, horizontaux ou obliques constituant la forme extérieure de la construction. Il résulte de la combinaison des règles de hauteur, de prospects et d’emprise au sol."@fr ;
+         rdfs:label "Gabarit"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Garage
+:Garage rdf:type owl:Class ;
+        rdfs:subClassOf :Dependance ;
+        rdfs:comment "afin de marquer un lien d’usage. Elle peut être accolée ou non à la construction principale avec"@fr ;
+        rdfs:label "Garage"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Gare
+:Gare rdf:type owl:Class ;
+      rdfs:subClassOf :InfrastructureTransport ;
+      rdfs:label "Gare"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Gouttiere
+:Gouttiere rdf:type owl:Class ;
+           rdfs:subClassOf :ElementToiture ;
+           rdfs:label "Gouttière"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Hauteur
+:Hauteur rdf:type owl:Class ;
+         rdfs:subClassOf :Dimension ;
+         rdfs:label "Hauteur"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#HauteurPlafond
+:HauteurPlafond rdf:type owl:Class ;
+                rdfs:subClassOf :Hauteur ;
+                rdfs:label "Hauteur de plafond"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Horizontale
+:Horizontale rdf:type owl:Class ;
+             rdfs:subClassOf :Reference ;
+             rdfs:label "Horizontale"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Immeuble
+:Immeuble rdf:type owl:Class ;
+          rdfs:subClassOf :Construction ;
+          rdfs:label "Immeuble"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Implantation
+:Implantation rdf:type owl:Class ;
+              rdfs:subClassOf :Delimitation ;
+              rdfs:label "Implantation"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ImplantationConstructionsLimitesSeparatives
+:ImplantationConstructionsLimitesSeparatives rdf:type owl:Class ;
+                                             rdfs:subClassOf :Rubrique ;
+                                             rdfs:label "Implantation des constructions par rapport aux limites séparatives"@fr ;
+                                             rdfs:seeAlso "Implantation des constructions par rapport aux limites séparatives"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ImplantationConstructionsVoiriesEmprisesPubliques
+:ImplantationConstructionsVoiriesEmprisesPubliques rdf:type owl:Class ;
+                                                   rdfs:subClassOf :Rubrique ;
+                                                   rdfs:label "Implantation des constructions par rapport aux voiries et emprises publiques"@fr ;
+                                                   rdfs:seeAlso "Implantation des constructions par rapport aux voiries et emprises publiques"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ImpossibiliteAmenager
+:ImpossibiliteAmenager rdf:type owl:Class ;
+                       rdfs:subClassOf :Decision ;
+                       rdfs:label "Impossibilité d’aménager"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ImpossibiliteArchitecturale
+:ImpossibiliteArchitecturale rdf:type owl:Class ;
+                             rdfs:subClassOf :ImpossibiliteAmenager ;
+                             rdfs:label "Impossibilité architecturale d’aménager"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ImpossibiliteTechnique
+:ImpossibiliteTechnique rdf:type owl:Class ;
+                        rdfs:subClassOf :ImpossibiliteAmenager ;
+                        rdfs:label "Impossibilité technique d’aménager"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Inclinaison
+:Inclinaison rdf:type owl:Class ;
+             rdfs:subClassOf :Dimension ;
+             rdfs:label "Inclinaison"@fr ;
+             rdfs:seeAlso "Angle"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Indicateur
+:Indicateur rdf:type owl:Class ;
+            rdfs:label "Indicateur"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#InfrastructureTransport
+:InfrastructureTransport rdf:type owl:Class ;
+                         rdfs:subClassOf :Transport ;
+                         rdfs:label "Infrastructure de Transport"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#InstallationTechnique
+:InstallationTechnique rdf:type owl:Class ;
+                       rdfs:subClassOf :ElementConstruction ;
+                       rdfs:label "Installation technique"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Interdiction
+:Interdiction rdf:type owl:Class ;
+              rdfs:subClassOf :Decision ;
+              rdfs:label "Interdiction"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Intersection
+:Intersection rdf:type owl:Class ;
+              rdfs:subClassOf :Reference ;
+              rdfs:label "Intersection"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Juridique
+:Juridique rdf:type owl:Class ;
+           rdfs:label "Juridique"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Largeur
+:Largeur rdf:type owl:Class ;
+         rdfs:subClassOf :Dimension ;
+         rdfs:label "Largeur"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#LimitationImpermeabilisationEtEffets
+:LimitationImpermeabilisationEtEffets rdf:type owl:Class ;
+                                      rdfs:subClassOf :Rubrique ;
+                                      rdfs:label "Limitation de l'imperméabilisation et de ses effets, Eaux pluviales"@fr ;
+                                      rdfs:seeAlso "Limitation de l'imperméabilisation et de ses effets, Eaux pluviales"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Limite
+:Limite rdf:type owl:Class ;
+        rdfs:label "Limite"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#LimiteDomainePublic
+:LimiteDomainePublic rdf:type owl:Class ;
+                     rdfs:subClassOf :Limite ;
+                     rdfs:label "Limite du domaine public"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#LimiteEmpriseVoies
+:LimiteEmpriseVoies rdf:type owl:Class ;
+                    rdfs:subClassOf :Limite ;
+                    rdfs:label "Limite de l'emprise des voies"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#LimiteFondPropriete
+:LimiteFondPropriete rdf:type owl:Class ;
+                     rdfs:subClassOf :Limite ;
+                     rdfs:label "Limite de fond de propriété"@fr ;
+                     rdfs:seeAlso "Limite de fond de terrain"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#LimiteLaterale
+:LimiteLaterale rdf:type owl:Class ;
+                rdfs:subClassOf :Limite ;
+                rdfs:label "Limite latérale"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#LimiteMurRiverain
+:LimiteMurRiverain rdf:type owl:Class ;
+                   rdfs:subClassOf :Limite ;
+                   rdfs:label "Limite de mur riverain"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#LimitePanCouverture
+:LimitePanCouverture rdf:type owl:Class ;
+                     rdfs:subClassOf :Limite ;
+                     rdfs:label "Limite du pan de couverture"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#LimiteSeparative
+:LimiteSeparative rdf:type owl:Class ;
+                  rdfs:subClassOf :Limite ;
+                  rdfs:comment "Les limites séparatives correspondent aux limites entre le terrain d’assiette de la construction, constitué d’une ou plusieurs unités foncières, et le ou les terrains contigus. Elles peuvent être distinguées en deux types: les limites latérales et les limites de fond de terrain. En sont exclues les limites de l’unité foncière par rapport aux voies et emprises publiques."@fr ;
+                  rdfs:label "Limite séparative"@fr ;
+                  rdfs:seeAlso "Terrain d'assiette, Construction, Unité foncière, Voie, Emprise publique"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#LineaireFacades
+:LineaireFacades rdf:type owl:Class ;
+                 rdfs:subClassOf :Delimitation ;
+                 rdfs:label "Linéaire de façades"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#LitMineur
+:LitMineur rdf:type owl:Class ;
+           rdfs:subClassOf :EauZoneHumide ;
+           rdfs:label "Lit mineur"@fr ;
+           rdfs:seeAlso "Cours d’eau"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Local
+:Local rdf:type owl:Class ;
+       rdfs:subClassOf :PartieConstruction ;
+       rdfs:label "Local"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#LocalAccessoire
+:LocalAccessoire rdf:type owl:Class ;
+                 rdfs:subClassOf :Local ;
+                 rdfs:comment "Le local accessoire fait soit partie intégrante d’une construction principale, soit il en constitue une annexe, soit une extension. Il est indissociable du fonctionnement de la construction principale."@fr ;
+                 rdfs:label "Local accessoire"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#LocalisationVerticale
+:LocalisationVerticale rdf:type owl:Class ;
+                       rdfs:label "Localisation verticale"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#LoiLittoral
+:LoiLittoral rdf:type owl:Class ;
+             rdfs:subClassOf :Rubrique ;
+             rdfs:label "Loi littoral"@fr ;
+             rdfs:seeAlso "Loi littoral"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Longueur
+:Longueur rdf:type owl:Class ;
+          rdfs:subClassOf :Dimension ;
+          rdfs:label "Longueur"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#LongueurCumulee
+:LongueurCumulee rdf:type owl:Class ;
+                 rdfs:subClassOf :Longueur ;
+                 rdfs:label "Longueur cumulée"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Lotissement
+:Lotissement rdf:type owl:Class ;
+             rdfs:subClassOf :OperationAmenagement ;
+             rdfs:label "Lotissement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Lucarne
+:Lucarne rdf:type owl:Class ;
+         rdfs:subClassOf :ElementConstruction ;
+         rdfs:label "Lucarne"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#MargeProtection
+:MargeProtection rdf:type owl:Class ;
+                 rdfs:subClassOf :Protection ;
+                 rdfs:label "Marge de protection"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Mur
+:Mur rdf:type owl:Class ;
+     rdfs:subClassOf :ElementConstruction ;
+     rdfs:label "Mur"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#MurRiverain
+:MurRiverain rdf:type owl:Class ;
+             rdfs:subClassOf :Mur ;
+             rdfs:label "Mur Riverain"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Nord
+:Nord rdf:type owl:Class ;
+      rdfs:subClassOf :Orientation ;
+      rdfs:label "Nord"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#NuInterieurFacades
+:NuInterieurFacades rdf:type owl:Class ;
+                    rdfs:subClassOf :Delimitation ;
+                    rdfs:label "Nu intérieur des façades"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#OperationAmenagement
+:OperationAmenagement rdf:type owl:Class ;
+                      rdfs:label "Opération d'aménagement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Orientation
+:Orientation rdf:type owl:Class ;
+             rdfs:subClassOf :Reference ;
+             rdfs:label "Orientation"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Ouest
+:Ouest rdf:type owl:Class ;
+       rdfs:subClassOf :Orientation ;
+       rdfs:label "Ouest"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Ouverture
+:Ouverture rdf:type owl:Class ;
+           rdfs:subClassOf :ElementConstruction ;
+           rdfs:label "Ouverture"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#OuverturePiecePrincipale
+:OuverturePiecePrincipale rdf:type owl:Class ;
+                          rdfs:subClassOf :Ouverture ;
+                          rdfs:label "Ouverture sur des pièces principales"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Ouvrage
+:Ouvrage rdf:type owl:Class ;
+         rdfs:label "Ouvrage"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#OuvragesSpecifiques
+:OuvragesSpecifiques rdf:type owl:Class ;
+                     rdfs:subClassOf :Rubrique ;
+                     rdfs:label "Ouvrages spécifiques"@fr ;
+                     rdfs:seeAlso "Ouvrages spécifiques"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#PLU
+:PLU rdf:type owl:Class ;
+     rdfs:subClassOf :Reglement ;
+     rdfs:label "Plan Local d'Urbanisme"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#POS
+:POS rdf:type owl:Class ;
+     rdfs:subClassOf :Reglement ;
+     rdfs:label "Plan d'Occupation des Sols"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#PanCouverture
+:PanCouverture rdf:type owl:Class ;
+               rdfs:subClassOf :Couverture ;
+               rdfs:label "Pan de couverture"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Parcelle
+:Parcelle rdf:type owl:Class ;
+          rdfs:subClassOf :Foncier ;
+          rdfs:label "Parcelle"@fr ;
+          rdfs:seeAlso "Cadastre, Parcelle cadastrale"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ParoiVerticale
+:ParoiVerticale rdf:type owl:Class ;
+                rdfs:subClassOf :ElementConstruction ;
+                rdfs:label "Paroi verticale"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#PartieConstruction
+:PartieConstruction rdf:type owl:Class ;
+                    rdfs:label "Partie d'une construction"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#PatrimoineArcheologique
+:PatrimoineArcheologique rdf:type owl:Class ;
+                         rdfs:subClassOf :Rubrique ;
+                         rdfs:label "Patrimoine archéologique"@fr ;
+                         rdfs:seeAlso "Patrimoine archéologique"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Pente
+:Pente rdf:type owl:Class ;
+       rdfs:subClassOf :Dimension ;
+       rdfs:label "Pente"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#PerimetreAttenteProjetGlobalAmenagement
+:PerimetreAttenteProjetGlobalAmenagement rdf:type owl:Class ;
+                                         rdfs:subClassOf :Rubrique ;
+                                         rdfs:label "Périmètre d'attente d'un projet global d'aménagement"@fr ;
+                                         rdfs:seeAlso "Périmètre d'attente d'un projet global d'aménagement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#PermisDemolir
+:PermisDemolir rdf:type owl:Class ;
+               rdfs:subClassOf :Rubrique ;
+               rdfs:label "Permis de démolir"@fr ;
+               rdfs:seeAlso "Permis de démolir"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#PersonnesMobiliteReduite
+:PersonnesMobiliteReduite rdf:type owl:Class ;
+                          rdfs:subClassOf :Usager ;
+                          rdfs:label "Personnes à mobilité réduite"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Piece
+:Piece rdf:type owl:Class ;
+       rdfs:subClassOf :PartieConstruction ;
+       rdfs:label "Pièce"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#PiecePrincipale
+:PiecePrincipale rdf:type owl:Class ;
+                 rdfs:subClassOf :Piece ;
+                 rdfs:label "Pièce principale"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#PieceSecondaire
+:PieceSecondaire rdf:type owl:Class ;
+                 rdfs:subClassOf :Piece ;
+                 rdfs:label "Pièce secondaire"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Pignon
+:Pignon rdf:type owl:Class ;
+        rdfs:subClassOf :ElementConstruction ;
+        rdfs:label "Pignon"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#PlaceStationnement
+:PlaceStationnement rdf:type owl:Class ;
+                    rdfs:label "Place de stationnement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#PlanAmenagement
+:PlanAmenagement rdf:type owl:Class ;
+                 rdfs:subClassOf :OperationAmenagement ;
+                 rdfs:label "Plan d'aménagement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#PlanEau
+:PlanEau rdf:type owl:Class ;
+         rdfs:subClassOf :EauZoneHumide ;
+         rdfs:label "Plan d’eau"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#PointNivellement
+:PointNivellement rdf:type owl:Class ;
+                  rdfs:subClassOf :Reference ;
+                  rdfs:label "Point de nivellement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Prescription
+:Prescription rdf:type owl:Class ;
+              rdfs:subClassOf :AccompagnementDecision ;
+              rdfs:label "Prescription"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Profondeur
+:Profondeur rdf:type owl:Class ;
+            rdfs:subClassOf :Dimension ;
+            rdfs:label "Profondeur"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ProgrammeLocalHabitat
+:ProgrammeLocalHabitat rdf:type owl:Class ;
+                       rdfs:subClassOf :Rubrique ;
+                       rdfs:label "Programme local de l’habitat"@fr ;
+                       rdfs:seeAlso "Programme local de l’habitat"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ProlongementBatiExistant
+:ProlongementBatiExistant rdf:type owl:Class ;
+                          rdfs:subClassOf :Construction ;
+                          rdfs:label "Prolongement du bâti existant"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Proprietaire
+:Proprietaire rdf:type owl:Class ;
+              rdfs:subClassOf :Juridique ;
+              rdfs:label "Proprietaire"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Propriete
+:Propriete rdf:type owl:Class ;
+           rdfs:subClassOf :Foncier ,
+                           :Juridique ;
+           rdfs:label "Propriété"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Protection
+:Protection rdf:type owl:Class ;
+            rdfs:label "Protection"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ProtectionCoursEauZonesHumides
+:ProtectionCoursEauZonesHumides rdf:type owl:Class ;
+                                rdfs:subClassOf :Rubrique ;
+                                rdfs:label "Plan d'eau et protection des cours d'eau et zones humides"@fr ;
+                                rdfs:seeAlso "Plan d'eau et protection des cours d'eau et zones humides"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#RampeAccessSousSol
+:RampeAccessSousSol rdf:type owl:Class ;
+                    rdfs:subClassOf :ElementAmenagement ;
+                    rdfs:comment "La pente des rampes d’accès au sous-sol, dans les 5 premiers mètres à partir de l’alignement, ne doit pas excéder 5 %, sauf en cas d’impossibilité technique et 18 % au-delà."@fr ;
+                    rdfs:label "Rampe d’accès au sous-sol"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Recul
+:Recul rdf:type owl:Class ;
+       rdfs:subClassOf :Dimension ;
+       rdfs:label "Recul"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Reference
+:Reference rdf:type owl:Class ;
+           rdfs:label "Référence"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Reglement
+:Reglement rdf:type owl:Class ;
+           rdfs:label "Règlement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Remise
+:Remise rdf:type owl:Class ;
+        rdfs:subClassOf :Dependance ;
+        rdfs:comment "qui elle entretient un lien fonctionnel, sans disposer d’accès direct depuis la construction"@fr ;
+        rdfs:label "Remise"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Retrait
+:Retrait rdf:type owl:Class ;
+         rdfs:subClassOf :Dimension ;
+         rdfs:comment "Le retrait règlementé à l’article 7 est la distance (voir définition) séparant la construction* d’une limite séparative."@fr ;
+         rdfs:label "Retrait"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#RezChaussee
+:RezChaussee rdf:type owl:Class ;
+             rdfs:subClassOf :LocalisationVerticale ;
+             rdfs:label "Rez-de-chaussée"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#RisquesTechnologiques
+:RisquesTechnologiques rdf:type owl:Class ;
+                       rdfs:subClassOf :Rubrique ;
+                       rdfs:label "Risques technologiques"@fr ;
+                       rdfs:seeAlso "Risques technologiques"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Rubrique
+:Rubrique rdf:type owl:Class ;
+          rdfs:label "Rubrique"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Ruine
+:Ruine rdf:type owl:Class ;
+       rdfs:subClassOf :Construction ;
+       rdfs:label "Ruine"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Saillie
+:Saillie rdf:type owl:Class ;
+         rdfs:subClassOf :ElementConstruction ;
+         rdfs:comment "Dans ces retraits règlementés, les saillies sont autorisées à condition que leur profondeur ne dépasse pas 30 cm et que leur emprise reste inférieure au tiers de la surface de la façade ou pignon sur laquelle elles se développent."@fr ;
+         rdfs:label "Saillie"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#SimpleDegagement
+:SimpleDegagement rdf:type owl:Class ;
+                  rdfs:subClassOf :ElementAmenagement ;
+                  rdfs:comment "Une terrasse qui n'est ni close ni couverte et constitue un simple dégagement pour certaines pièces de la maison n'a pas le caractère d'une surface construite"@fr ;
+                  rdfs:label "Simple dégagement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#SitePropre
+:SitePropre rdf:type owl:Class ;
+            rdfs:subClassOf :InfrastructureTransport ;
+            rdfs:label "Site propre"@fr ;
+            rdfs:seeAlso "transport collectif en site propre"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#SommetToiture
+:SommetToiture rdf:type owl:Class ;
+               rdfs:subClassOf :ElementToiture ;
+               rdfs:label "Sommet d’une toiture"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#SousSol
+:SousSol rdf:type owl:Class ;
+         rdfs:subClassOf :LocalisationVerticale ;
+         rdfs:label "Sous-sol"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#StationTransportPublicGuide
+:StationTransportPublicGuide rdf:type owl:Class ;
+                             rdfs:subClassOf :InfrastructureTransport ;
+                             rdfs:label "Station de transport public guidé"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Stationnement
+:Stationnement rdf:type owl:Class ;
+               rdfs:subClassOf :Rubrique ;
+               rdfs:label "Stationnement"@fr ;
+               rdfs:seeAlso "Stationnement"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Sud
+:Sud rdf:type owl:Class ;
+     rdfs:subClassOf :Orientation ;
+     rdfs:label "Sud"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#SuperficieTerrain
+:SuperficieTerrain rdf:type owl:Class ;
+                   rdfs:subClassOf :Surface ;
+                   rdfs:label "superficie du terrain"@fr ;
+                   rdfs:seeAlso "Terrain"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Surface
+:Surface rdf:type owl:Class ;
+         rdfs:subClassOf :Dimension ;
+         rdfs:label "Surface"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#SurfacePlancher
+:SurfacePlancher rdf:type owl:Class ;
+                 rdfs:subClassOf :Indicateur ;
+                 rdfs:comment "Conformément à l’article L112-1 du Code de l’Urbanisme, la surface de plancher de la construction* s’entend de la somme des surfaces de plancher closes et couvertes, sous une hauteur de plafond supérieure à 1,80m, calculée à partir du nu intérieur des façades* du bâtiment, après déduction de certains types de surfaces"@fr ;
+                 rdfs:label "Surface de plancher"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Surplomb
+:Surplomb rdf:type owl:Class ;
+          rdfs:subClassOf :ElementConstruction ;
+          rdfs:label "Surplomb"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Terrain
+:Terrain rdf:type owl:Class ;
+         rdfs:subClassOf :Foncier ;
+         rdfs:label "Terrain"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#TerrainAssiette
+:TerrainAssiette rdf:type owl:Class ;
+                 rdfs:subClassOf :Terrain ;
+                 rdfs:comment "Constitué de l’ensemble des parcelles cadastrales contiguës qui appartiennent au même proprié- taire ou issues de la même indivision, le terrain ou unité foncière est la seule notion retenue pour l’application du règlement du PLU"@fr ;
+                 rdfs:label "Terrain d’assiette"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#TerrainConstructible
+:TerrainConstructible rdf:type owl:Class ;
+                      rdfs:subClassOf :Terrain ;
+                      rdfs:label "Terrain constructible"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#TerrainEnclave
+:TerrainEnclave rdf:type owl:Class ;
+                rdfs:subClassOf :Terrain ;
+                rdfs:label "Terrain enclavé"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#TerrainIlot
+:TerrainIlot rdf:type owl:Class ;
+             rdfs:subClassOf :Terrain ;
+             rdfs:comment "Unité foncière ou d’opération constituée d’une ou plusieurs parcelles et isolée par une trame viaire"@fr ;
+             rdfs:label "Terrain d’îlot"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#TerrainInconstructible
+:TerrainInconstructible rdf:type owl:Class ;
+                        rdfs:subClassOf :Terrain ;
+                        rdfs:label "Terrain inconstructible"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#TerrainNaturel
+:TerrainNaturel rdf:type owl:Class ;
+                rdfs:subClassOf :Terrain ;
+                rdfs:comment "La hauteur fixée aux articles 7 des règlements de zone est la différence d’altitude maximale ad- mise entre tout point de l’édifice et sa projection verticale sur le sol naturel ou à défaut, tel qu’il existe dans son état antérieur aux travaux entrepris pour la réalisation du projet."@fr ,
+                             "Le terrain naturel servant de référence pour le calcul de certaines hauteurs mentionnées dans les règlements de zone notamment aux articles 7, 10 et 11 est défini comme le terrain (niveau du sol) de l’unité foncière d’implantation à la date du dépôt de la demande d’autorisation d’urbanisme, hors aménagement ponctuel."@fr ;
+                rdfs:label "Terrain naturel"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Terrasse
+:Terrasse rdf:type owl:Class ;
+          rdfs:subClassOf :Construction ;
+          rdfs:label "Terrasse"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#TerrasseAttique
+:TerrasseAttique rdf:type owl:Class ;
+                 rdfs:subClassOf :Terrasse ;
+                 rdfs:label "Terrasse en attique"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Toiture
+:Toiture rdf:type owl:Class ;
+         rdfs:subClassOf :Batiment ;
+         rdfs:label "Toiture"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ToitureTerrasse
+:ToitureTerrasse rdf:type owl:Class ;
+                 rdfs:subClassOf :ElementConstruction ;
+                 rdfs:label "Toiture-terrasse"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Tolérance
+:Tolérance rdf:type owl:Class ;
+           rdfs:subClassOf :Dimension ;
+           rdfs:label "Tolérance"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Topographie
+:Topographie rdf:type owl:Class ;
+             rdfs:subClassOf :OperationAmenagement ;
+             rdfs:label "Topographie"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#TrameViaire
+:TrameViaire rdf:type owl:Class ;
+             rdfs:subClassOf :Voirie ;
+             rdfs:label "Trame viaire"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Transport
+:Transport rdf:type owl:Class ;
+           rdfs:label "Transport"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#TransportCollectif
+:TransportCollectif rdf:type owl:Class ;
+                    rdfs:subClassOf :Transport ;
+                    rdfs:label "Transport collectif"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#TravauxAmenagementSol
+:TravauxAmenagementSol rdf:type owl:Class ;
+                       rdfs:subClassOf :OperationAmenagement ;
+                       rdfs:comment "Travaux d'aménagement du sol se traduisant par une modification significative de son niveau avant et après travaux"@fr ;
+                       rdfs:label "Travaux d'aménagement du sol"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Trottoir
+:Trottoir rdf:type owl:Class ;
+          rdfs:subClassOf :Voirie ;
+          rdfs:label "Trottoir"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#TypeCategorie
+:TypeCategorie rdf:type owl:Class ;
+               rdfs:label "Type ou Catégorie"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#TypeExtensionVerticale
+:TypeExtensionVerticale rdf:type owl:Class ;
+                        rdfs:subClassOf :TypeCategorie ;
+                        rdfs:comment "Décrit le type d'extension verticale, parmi la surélévation, l'excavation ou l'agrandissement"@fr ;
+                        rdfs:label "Type d'extension verticale"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#TypeToiture
+:TypeToiture rdf:type owl:Class ;
+             rdfs:subClassOf :TypeCategorie ;
+             rdfs:label "Type de toiture"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#UniteFonciere
+:UniteFonciere rdf:type owl:Class ;
+               rdfs:subClassOf :Foncier ;
+               rdfs:label "Unité foncière"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Usager
+:Usager rdf:type owl:Class ;
+        rdfs:subClassOf :OperationAmenagement ;
+        rdfs:label "Usager"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Vehicule
+:Vehicule rdf:type owl:Class ;
+          rdfs:subClassOf :Transport ;
+          rdfs:label "Véhicule"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#VehiculeAutomobile
+:VehiculeAutomobile rdf:type owl:Class ;
+                    rdfs:subClassOf :Vehicule ;
+                    rdfs:label "Véhicule automobile"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Veranda
+:Veranda rdf:type owl:Class ;
+         rdfs:subClassOf :ElementConstruction ;
+         rdfs:label "Véranda"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Verticale
+:Verticale rdf:type owl:Class ;
+           rdfs:subClassOf :Reference ;
+           rdfs:label "Verticale"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Voie
+:Voie rdf:type owl:Class ;
+      rdfs:subClassOf :InfrastructureTransport ;
+      rdfs:comment "Sont considérées comme voies, les espaces du domaine public ou privé destinés à la circulation desservant plusieurs parcelles."@fr ;
+      rdfs:label "Voie"@fr ;
+      rdfs:seeAlso "Circulation, Désserte"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#VoieCourbe
+:VoieCourbe rdf:type owl:Class ;
+            rdfs:subClassOf :Voie ;
+            rdfs:label "Voie courbe"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#VoieDesserte
+:VoieDesserte rdf:type owl:Class ;
+              rdfs:subClassOf :Voie ;
+              rdfs:label "Voie de désserte"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#VoieFerree
+:VoieFerree rdf:type owl:Class ;
+            rdfs:subClassOf :Voie ;
+            rdfs:label "Voie ferrée"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#VoieFluviale
+:VoieFluviale rdf:type owl:Class ;
+              rdfs:subClassOf :Voie ;
+              rdfs:label "Voie fluviale"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#VoieNouvelle
+:VoieNouvelle rdf:type owl:Class ;
+              rdfs:subClassOf :Voie ;
+              rdfs:comment "En cas d’aménagement paysager de voies nouvelles, l’emprise de celle-ci est définie par l’en- semble de la voie réservée aux déplacements y compris les espaces végétalisés."@fr ;
+              rdfs:label "Voie nouvelle"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Voirie
+:Voirie rdf:type owl:Class ;
+        rdfs:subClassOf :InfrastructureTransport ;
+        rdfs:comment "Les voies à créer doivent quant à leurs caractéristiques répondre à toutes les conditions exigées par le Cahier des Clauses Techniques Particulières approuvé par la ville de Lorient pour permettre leur éventuel classement dans la voirie communale."@fr ;
+        rdfs:label "Voirie"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Volume
+:Volume rdf:type owl:Class ;
+        rdfs:subClassOf :Dimension ;
+        rdfs:label "Volume"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#VolumeConstruction
+:VolumeConstruction rdf:type owl:Class ;
+                    rdfs:subClassOf :Volume ;
+                    rdfs:label "Volume d'une construction"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Zenith
+:Zenith rdf:type owl:Class ;
+        rdfs:subClassOf :Orientation ;
+        rdfs:label "Zénith"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ZoneInondable
+:ZoneInondable rdf:type owl:Class ;
+               rdfs:subClassOf :Delimitation ;
+               rdfs:label "Zone inondable"@fr .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ZonesBassesSubmersionMarine
+:ZonesBassesSubmersionMarine rdf:type owl:Class ;
+                             rdfs:subClassOf :Rubrique ;
+                             rdfs:label "Zones basses de submersion marine"@fr ;
+                             rdfs:seeAlso "Zones basses de submersion marine"@fr .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.smartplu.org/owl/2018/smartplu#Bureau
+:Bureau rdf:type owl:NamedIndividual ,
+                 :DestinationConstruction .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Commerce
+:Commerce rdf:type owl:NamedIndividual ,
+                   :DestinationConstruction .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Entrepot
+:Entrepot rdf:type owl:NamedIndividual ,
+                   :DestinationConstruction .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#EtablissementArtisanal
+:EtablissementArtisanal rdf:type owl:NamedIndividual ,
+                                 :DestinationConstruction .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#EtablissementIndustriel
+:EtablissementIndustriel rdf:type owl:NamedIndividual ,
+                                  :DestinationConstruction .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ExploitationAgricole
+:ExploitationAgricole rdf:type owl:NamedIndividual ,
+                               :DestinationConstruction .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#ExploitationForestiere
+:ExploitationForestiere rdf:type owl:NamedIndividual ,
+                                 :DestinationConstruction .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#HebergementHotelier
+:HebergementHotelier rdf:type owl:NamedIndividual ,
+                              :DestinationConstruction .
+
+
+###  http://www.smartplu.org/owl/2018/smartplu#Logement
+:Logement rdf:type owl:NamedIndividual ,
+                   :DestinationConstruction .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
